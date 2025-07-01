@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("isLoggedIn", "true");
       window.location.href = "dashboard.html";
     } else {
-      alert("❌ Invalid username or password");
+      alert("❌ Invalid login");
     }
   });
 });

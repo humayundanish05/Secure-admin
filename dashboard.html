@@ -5,38 +5,21 @@
   <title>Admin Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <script src="assets/js/protect.js"></script>
-  <div class="flex">
-    <aside class="w-64 bg-gray-900 text-white h-screen p-6">
-      <h1 class="text-xl font-bold mb-6">Admin Panel</h1>
-      <nav>
-        <ul class="space-y-4">
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="users.html">Users</a></li>
-          <li><a href="orders.html">Orders</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="settings.html">Settings</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main class="flex-1 p-8">
-      <h2 class="text-3xl font-bold mb-4">Welcome, Admin!</h2>
-      <div class="grid grid-cols-3 gap-4">
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-bold">Users</h3>
-          <p class="text-2xl">1,245</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-bold">Orders</h3>
-          <p class="text-2xl">532</p>
-        </div>
-        <div class="bg-white p-6 rounded shadow text-center">
-          <h3 class="text-xl font-bold">Balance</h3>
-          <p class="text-2xl">$1,230</p>
-        </div>
-      </div>
-    </main>
-  </div>
+<body class="bg-gray-900 text-white p-6">
+  <h1 class="text-3xl font-bold mb-4">Welcome to Dashboard</h1>
+  <button onclick="logout()" class="bg-red-600 hover:bg-red-700 p-2 rounded">Logout</button>
+
+  <script>
+    if (localStorage.getItem("isLoggedIn") !== "true") {
+      alert("🚫 Please login first!");
+      window.location.href = "index.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("isLoggedIn");
+      alert("👋 Logged out successfully!");
+      window.location.href = "index.html";
+    }
+  </script>
 </body>
 </html>
