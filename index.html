@@ -13,6 +13,23 @@
     <input type="password" id="password" placeholder="Password" class="w-full mb-4 p-2 rounded bg-gray-700 text-white" />
     <button id="loginBtn" class="w-full bg-blue-600 hover:bg-blue-700 p-2 rounded">Login</button>
   </div>
+
+  <!-- Top right 3 dots menu -->
+<div class="relative inline-block text-left float-right">
+  <button id="menuBtn" class="text-white text-2xl px-3 py-1 hover:bg-gray-700 rounded focus:outline-none">
+    ⋮
+  </button>
+
+  <!-- Dropdown menu -->
+  <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded shadow-lg z-10">
+    <a href="#" class="block px-4 py-2 hover:bg-gray-700">👤 User</a>
+    <a href="#" class="block px-4 py-2 hover:bg-gray-700">📦 Order</a>
+    <a href="#" class="block px-4 py-2 hover:bg-gray-700">🛠️ Service</a>
+  </div>
+</div>
+
+<!-- External JS file -->
+<script src="dashboard.js"></script>
   <script src="login.js"></script>
 </body>
 </html>
