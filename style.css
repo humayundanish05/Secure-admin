@@ -1,0 +1,45 @@
+/* Light shadow on all cards and boxes */
+.card, .box, .panel, .table {
+  @apply rounded-lg shadow-md;
+}
+
+/* Uniform input & button spacing */
+input, select, textarea {
+  @apply border border-gray-300 rounded px-3 py-2 w-full;
+}
+
+button {
+  @apply px-4 py-2 rounded text-white bg-blue-600 hover:bg-blue-700 transition;
+}
+
+/* Headings spacing */
+h1, h2, h3 {
+  @apply mb-4 font-semibold text-gray-800;
+}
+
+/* Sidebar active link styling */
+aside nav a {
+  @apply block text-gray-300 hover:text-white transition;
+}
+
+aside nav a.active {
+  @apply font-bold text-white;
+}
+
+/* Table styling */
+table th {
+  @apply bg-gray-200 text-sm uppercase tracking-wide text-gray-600;
+}
+
+table td, table th {
+  @apply px-4 py-3 border-t;
+}
+
+/* Utility spacing */
+.section {
+  @apply p-6 bg-white rounded-lg shadow;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}

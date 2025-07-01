@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <script src="assets/js/protect.js"></script>
+  <div class="flex">
+    <aside class="w-64 bg-gray-900 text-white h-screen p-6">
+      <h1 class="text-xl font-bold mb-6">Admin Panel</h1>
+      <nav>
+        <ul class="space-y-4">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="users.html">Users</a></li>
+          <li><a href="orders.html">Orders</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="flex-1 p-8">
+      <h2 class="text-3xl font-bold mb-6">Services</h2>
+      <table class="min-w-full bg-white rounded shadow overflow-hidden">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="text-left p-4">Service</th>
+            <th class="text-left p-4">Category</th>
+            <th class="text-left p-4">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-t">
+            <td class="p-4">YouTube Views</td>
+            <td class="p-4">YouTube</td>
+            <td class="p-4">$1.50 / 1000</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>
